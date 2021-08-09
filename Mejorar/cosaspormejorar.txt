@@ -1,0 +1,28 @@
+
+Principales Cosas A Mejorar:
+
+-Dark Mode: La pagina tiene una combinacion de colores oscuros y claros. Sin embargo algo recomendado es tener para el cliente una oportunidad de seleccionar un modo ya sea oscuro o claro. Gracias a ello se podra sentir mas comodo y en la mayoria de casos el modo oscuros ayuda a los celulares ahorrar bateria.
+
+-La gran mayoria de botones tiene un hover o una accion sobre los botones demasiada obsoleta para poderse notar y ello a la hora de experiencia de usuario es molesta
+
+-La barra de navegacion destruye  el diseno de la pagina. Al ser la pagina de colores en su gran parte oscuros, termina
+molestando al cliente ya que no va la barra blanca con lo estetico de la pagina que va en negro
+
+
+-El link superior para ir a la plataforma corta el estilo de la pagina colocando un espacio innecesario y mas encima el link no es llamativo y pasa de desapercibido.
+
+-En la parte de recursos podemos ver que en donde dice "Escúchanos" los items no tienen el mas minimo de separacion entre ellos haciendo no se vea simetrico y por ende detona en que se vea mal,se puede aprovechar mejor el espacio
+
+-Muchos botones no tienen un active el cual ayude a que el cliente pueda saber cuando hizo o no click y por ende rompe o hace fea la experiencia de usuario.
+
+-Viendo la forma en que la pagina recibe ciertos elementos o ciertas imagenes rompe con la experiencia de usuario debido a que las imagenes al ser demasiado pesadas incluso llegando a las casi 10 mb no permite que se carguen a tiempo y los usuarios tengan que esperar a que se cargen y mas hablando de datos mobiles
+
+-Los botones del Slider o puntos que muestran las cantidades de items que existen en el slider, no tienen ningun tipo de pointer o ningun tipo de forma de saber que estoy encima de el ni hover, ni cursor pointer, ni active, y por ende toca dar click sin saber incluso si ese botton se puede presionar.
+
+
+Cosas Mejorables Pero No Principales:
+
+-Los tamaños de la letra en ciertas partes es demasiado grande.
+
+-Buscar colores debido a que en muchos titulos el color es el rojo. Y el color rojo dependiendo del contexto puede percibirse como peligro y por ende las personas pasan de leerlas. Una solucion para ello podria usar colores neutros los cuales puedan no percibirse de una manera u otra. Ejemplo usar colores grises, negros, mates,etc
+

@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './scss/main.scss';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Inicio from './views/Inicio/Inicio.jsx';
+import Select from './components/Select/Select';
+import Card from './components/Card/Card';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [datos,setDatos]=useState("no existe dato")
+  const uploadData = (dataApi)=>{
+    setDatos(dataApi)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/'>
+          <Inicio />
+        </Route>
+        <Route path='/select/:name'>
+          <Select uploadData={uploadData} />
+          <Card datos={datos}/>
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
