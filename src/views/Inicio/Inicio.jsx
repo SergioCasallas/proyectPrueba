@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Inicio = () => {
   return (
     <div className='inicio'>
-      <h1 className='inicio__title'>Selecciona una Option</h1>
+      <h1 className='inicio__title'>Selecciona una Opcione</h1>
       <div className='inicio__options'>
         <Link className='inicio__option-link' to='/select/pais'>Pais</Link>
         <Link className='inicio__option-link' to='/select/code'>Code</Link>

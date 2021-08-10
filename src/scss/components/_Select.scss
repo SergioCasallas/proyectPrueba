@@ -10,16 +10,15 @@
   height: 50vh;
 
   &__input-select {
-    text-transform: capitalize;
     width: 25%;
     height: 10%;
-    font-size: $fontSizeSmall;
     margin-top: 5%;
     margin-bottom: 10%;
     outline: none;
+    font-size: $fontSizeSmall;
+    text-transform: capitalize;
   }
-  &__option {
-  }
+
   &__title {
     margin: 0;
     color: $fontSecondaryColor;
@@ -30,6 +29,7 @@
 @media only screen and (max-width: 600px) {
   .select {
     height: 40vh;
+
     &__input-select {
       width: 80%;
       text-align-last: center;

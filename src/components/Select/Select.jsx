@@ -7,19 +7,18 @@ import Code from '../../json/listadeCodigos.json';
 const Select = ({ uploadData }) => {
 
   const { name } = useParams();
-  
+
   const sendDataFecht = async (url) => {
     try {
       const response = await fetch(url);
       const dataJson = await response.json();
       const data = await dataJson;
-      console.log(await data);
       uploadData(await data);
     } catch (e) {
       console.log(e);
     }
   };
-  
+
   const sendFecht = (e) => {
     const item = e.target.value;
     const urlPaises = `https://restcountries.eu/rest/v2/name/${item}`;
@@ -32,7 +31,6 @@ const Select = ({ uploadData }) => {
     } else if (name === 'capital') {
       sendDataFecht(urlCapitales);
     }
-    // console.log(e.target.value);
   };
   return (
     <div className='select'>

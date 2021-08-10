@@ -27,14 +27,16 @@ const Card = ({ datos }) => {
             Moneda: <b className='card__b'>{datos[0].currencies[0].name}</b>
           </span>
           <span className='card__span'>
-            Simbolo de Moneda: <b className='card__b'>{datos[0].currencies[0].symbol}</b>
+            Simbolo de Moneda:{' '}
+            <b className='card__b'>{datos[0].currencies[0].symbol}</b>
           </span>
           <span className='card__span'>
-            Lenguaje Nativo: <b className='card__b'>{datos[0].languages[0].nativeName}</b>
+            Lenguaje Nativo:{' '}
+            <b className='card__b'>{datos[0].languages[0].nativeName}</b>
           </span>
         </div>
       ) : (
-       <h1 className='card__title'>No hay elementos seleccionados</h1>
+        <h1 className='card__title'>No hay elementos seleccionados</h1>
       )}
     </div>
   );
