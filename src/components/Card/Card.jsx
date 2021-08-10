@@ -1,96 +1,41 @@
 import React from 'react';
 
-const Card = ({datos}) => {
-//   const datos = [
-//     {
-//       name: 'Colombia',
-//       topLevelDomain: ['.co'],
-//       alpha2Code: 'CO',
-//       alpha3Code: 'COL',
-//       callingCodes: ['57'],
-//       capital: 'Bogotá',
-//       altSpellings: ['CO', 'Republic of Colombia', 'República de Colombia'],
-//       region: 'Americas',
-//       subregion: 'South America',
-//       population: 48759958,
-//       latlng: [4.0, -72.0],
-//       demonym: 'Colombian',
-//       area: 1141748.0,
-//       gini: 55.9,
-//       timezones: ['UTC-05:00'],
-//       borders: ['BRA', 'ECU', 'PAN', 'PER', 'VEN'],
-//       nativeName: 'Colombia',
-//       numericCode: '170',
-//       currencies: [
-//         {
-//           code: 'COP',
-//           name: 'Colombian peso',
-//           symbol: '$',
-//         },
-//       ],
-//       languages: [
-//         {
-//           iso639_1: 'es',
-//           iso639_2: 'spa',
-//           name: 'Spanish',
-//           nativeName: 'Español',
-//         },
-//       ],
-//       translations: {
-//         de: 'Kolumbien',
-//         es: 'Colombia',
-//         fr: 'Colombie',
-//         ja: 'コロンビア',
-//         it: 'Colombia',
-//         br: 'Colômbia',
-//         pt: 'Colômbia',
-//       },
-//       flag: 'https://restcountries.eu/data/col.svg',
-//       regionalBlocs: [
-//         {
-//           acronym: 'PA',
-//           name: 'Pacific Alliance',
-//           otherAcronyms: [],
-//           otherNames: ['Alianza del Pacífico'],
-//         },
-//         {
-//           acronym: 'USAN',
-//           name: 'Union of South American Nations',
-//           otherAcronyms: ['UNASUR', 'UNASUL', 'UZAN'],
-//           otherNames: [
-//             'Unión de Naciones Suramericanas',
-//             'União de Nações Sul-Americanas',
-//             'Unie van Zuid-Amerikaanse Naties',
-//             'South American Union',
-//           ],
-//         },
-//       ],
-//       cioc: 'COL',
-//     },
-//   ];
+const Card = ({ datos }) => {
   return (
-    <div>
-     {
-         datos!=='no existe dato'?
-         (
-              <div>
-        <figure>
-          <img src={datos[0].flag} alt='bandera' />
-        </figure>
-        <h1>{datos[0].name}</h1>
-        <h1>{datos[0].capital}</h1>
-        <h1>{datos[0].region}</h1>
-        <h1>{datos[0].population}</h1>
-        <h1>{datos[0].latlng}</h1>
-        <h1>{datos[0].timezones}</h1>
-        <h1>{datos[0].currencies[0].name}</h1>
-        <h1>{datos[0].currencies[0].symbol}</h1>
-        <h1>{datos[0].languages[0].nativeName}</h1>
-      </div>
-         )
-         :
-         (console.log('cargando'))
-     }
+    <div className='card'>
+      {datos !== 'no existe dato' ? (
+        <div className='card__item'>
+          <figure className='card__content-image'>
+            <img className='card__image' src={datos[0].flag} alt='bandera' />
+          </figure>
+          <span className='card__span'>
+            Pais: <b className='card__b'>{datos[0].name}</b>
+          </span>
+          <span className='card__span'>
+            Capital: <b className='card__b'>{datos[0].capital}</b>
+          </span>
+          <span className='card__span'>
+            Region: <b className='card__b'>{datos[0].region}</b>
+          </span>
+          <span className='card__span'>
+            Poblacion: <b className='card__b'>{datos[0].population}</b>
+          </span>
+          <span className='card__span'>
+            Zona Horaria: <b className='card__b'>{datos[0].timezones}</b>
+          </span>
+          <span className='card__span'>
+            Moneda: <b className='card__b'>{datos[0].currencies[0].name}</b>
+          </span>
+          <span className='card__span'>
+            Simbolo de Moneda: <b className='card__b'>{datos[0].currencies[0].symbol}</b>
+          </span>
+          <span className='card__span'>
+            Lenguaje Nativo: <b className='card__b'>{datos[0].languages[0].nativeName}</b>
+          </span>
+        </div>
+      ) : (
+       <h1 className='card__title'>No hay elementos seleccionados</h1>
+      )}
     </div>
   );
 };

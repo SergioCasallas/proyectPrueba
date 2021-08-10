@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Inicio from './views/Inicio/Inicio.jsx';
 import Select from './components/Select/Select';
 import Card from './components/Card/Card';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function App() {
   const [datos,setDatos]=useState("no existe dato")

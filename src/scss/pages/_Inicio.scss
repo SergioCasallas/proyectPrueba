@@ -1,0 +1,54 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  &__option-link {
+    @include reset-link;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5% 0;
+  }
+
+  &__option-link:hover {
+    @include hover-link;
+  }
+
+  &__options {
+    background-color: $primaryColor;
+    margin-top: 3%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 80%);
+    gap: 10%;
+    place-content: center;
+    width: 30%;
+    height: 40vh;
+    border-radius: 2px;
+  }
+
+  &__title {
+    color: $fontSecondaryColor;
+    font-size: $fontSizeLarge;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .inicio {
+    &__options {
+      width: 80%;
+    }
+
+    &__title {
+      color: $fontSecondaryColor;
+      font-size: $fontSizeMedium;
+    }
+  }
+}

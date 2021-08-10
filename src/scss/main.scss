@@ -13,10 +13,10 @@
 @import 'layout/header', 'layout/footer';
 
 // 5. Components
-@import 'components/button';
+@import 'components/button','components/Select','components/Card';
 
 // 6. Page-specific styles
-@import 'pages/home';
+@import 'pages/home', 'pages/_Inicio';
 
 // 7. Themes
 @import 'themes/default';
@@ -25,5 +25,5 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: red;
+  background-color: $thirdColor;
 }

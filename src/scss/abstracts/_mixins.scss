@@ -1,3 +1,26 @@
+@import './variables';
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
+@mixin reset-link {
+  font-size: $fontSizeMedium;
+  text-decoration: none;
+  color: $fontPrimaryColor;
+  transition-property: color, background-color,opacity, font-size;
+  transition-timing-function: ease;
+  transition-duration: 500ms;
+}
+
+@mixin hover-link {
+    opacity: 0.9;
+  transition-duration: 200ms;
+  transition-property: color, background-color,opacity, font-size;
+  transition-timing-function: ease;
+  background-color: $thirdColor;
+  color: $fontSecondaryColor;
+  font-size: $fontSizeLarge - 5px;
+}
+
+@mixin title {
+  font-size: $fontSizeLarge;
+}
